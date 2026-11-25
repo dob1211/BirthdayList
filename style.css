@@ -24,6 +24,12 @@ main {
     flex: 1;
 }
 
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
 /*Buttons*/
 button {
     background-color: var(--accent-color2);
@@ -83,8 +89,8 @@ header>#toggleLightButton {
 body.darkMode {
     --primary-color: #667565;
     --secondary-color: #806565;
-    --accent-color: #ffcc00;
-    --accent-color2: #ff9900;
+    --accent-color: #ecc72f;
+    --accent-color2: #d88a14;
 }
 
 /*Footer*/
@@ -92,4 +98,20 @@ footer {
     background-color: var(--accent-color);
     text-align: center;
     padding: 10px;
+}
+
+/*Desktop*/
+
+@media (min-width: 1000px) {
+    #presentList {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .present {
+        height: auto;
+        width: 30%;
+        min-height: 50vh;
+        min-width: 30%;
+    }
 }
