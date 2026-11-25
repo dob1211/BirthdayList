@@ -1,0 +1,95 @@
+/*General*/
+:root {
+    --primary-color: #cbcbcb;
+    --secondary-color: #333;
+    --accent-color: #ffcc00;
+    --accent-color2: #ff9900;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*Buttons*/
+button {
+    background-color: var(--accent-color2);
+    color: var(--secondary-color);
+    border: 3px solid var(--accent-color2);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Header*/
+header {
+    background-color: var(--accent-color);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+header>#toggleLightButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#countdown {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*PresentList*/
+#presentList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.present {
+    background-color: var(--accent-color2);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.present>img {
+    max-width: 100%;
+    height: 25vh;
+}
+
+/*Dark/Light Mode*/
+body.darkMode {
+    --primary-color: #667565;
+    --secondary-color: #806565;
+    --accent-color: #ffcc00;
+    --accent-color2: #ff9900;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 10px;
+}
